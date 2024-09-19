@@ -26,7 +26,7 @@ export async function POST(request: Request) {
     console.log(existingIGNs)
 
     if (existingIGNs.length > 0) {
-      return NextResponse.json({ error: 'IGN already registered for this IP address' }, { status: 400 })
+      return NextResponse.json({ error: 'You already register IGN' }, { status: 400 })
     }
 
     // Guardar el nuevo IGN en Supabase
