@@ -64,7 +64,7 @@ export default function Home() {
           className="rounded-full"
         />
       </div>
-      <h1 className="text-5xl font-bold mb-4 text-white">Playbex</h1>
+      <h1 className="text-5xl font-bold mb-4 text-white">Playbex Network</h1>
       <p className={`text-2xl mb-8 text-teal-200 transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}>
         Coming Soon
@@ -88,7 +88,7 @@ export default function Home() {
           <form onSubmit={handleSubmit}>
             <Input
               type="text"
-              placeholder="Your Minecraft IGN"
+              placeholder="Minecraft IGN"
               value={ign}
               onChange={(e) => setIgn(e.target.value)}
               className="mb-4"

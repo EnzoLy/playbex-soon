@@ -26,7 +26,7 @@ export async function POST(request: Request) {
     console.log(existingIGNs)
 
     if (existingIGNs.length > 0) {
-      return NextResponse.json({ error: 'You already register IGN' }, { status: 400 })
+      return NextResponse.json({ error: 'You already confirmed participation!' }, { status: 400 })
     }
 
     // Guardar el nuevo IGN en Supabase
@@ -36,10 +36,10 @@ export async function POST(request: Request) {
 
     if (error) {
       console.error(error)
-      return NextResponse.json({ error: 'Error saving IGN' }, { status: 500 })
+      return NextResponse.json({ error: 'Error saving confirmation' }, { status: 500 })
     }
 
-    return NextResponse.json({ message: 'IGN saved successfully' })
+    return NextResponse.json({ message: 'Confirmation saved successfully' })
   } catch (error) {
     console.error(error)
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 })
