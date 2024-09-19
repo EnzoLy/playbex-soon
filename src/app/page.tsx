@@ -67,14 +67,14 @@ export default function Home() {
       <h1 className="text-5xl font-bold mb-4 text-white">Playbex Network</h1>
       <p className={`text-2xl mb-8 text-teal-200 transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}>
-        Coming Soon
+        Coming Soon...
       </p>
       <Button
         size="lg"
         className="text-lg px-6 py-3 bg-teal-500 text-white font-semibold hover:bg-teal-600 transition-colors duration-300"
         onClick={handleButtonClick}
       >
-        Confirmar participación
+        Confirm participation
       </Button>
 
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
